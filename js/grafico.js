@@ -4,17 +4,17 @@ var highchartsSettings = {
     series: [
         {
             id: "T1",
-            name: "T1",
-            showInLegend: false,
+            name: "Temperatura ambiente",
+            showInLegend: true,
             data: getLocally("roomTemperature"),
             color: "red",
         },
         {
             id: "T2",
-            name: "T2",
-            showInLegend: false,
+            name: "Temperatura estufa",
+            showInLegend: true,
             data: getLocally("anotherTemperature"),
-            color: "blue",
+            color: "green",
         },
     ],
     plotOptions: {
@@ -23,7 +23,16 @@ var highchartsSettings = {
     xAxis: { enabled: true, title: { text: "t (s)" } },
     yAxis: { enabled: true, title: { text: "Temperatura (ºC)" } },
     credits: { enabled: false },
+
+    legend: {
+        layout: 'vertical', // Layout da legenda
+        align: 'right', // Alinhamento da legenda
+        verticalAlign: 'middle', // Posição vertical da legenda
+        floating: false, // Se a legenda deve flutuar
+        borderWidth: 1 // Largura da borda da legenda
+    }
 };
+
 
 var chartPT = new Highcharts.Chart(highchartsSettings);
 

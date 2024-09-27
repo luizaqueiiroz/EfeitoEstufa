@@ -16,19 +16,17 @@
     text-shadow: 0.1em 0.1em 0.2em black
 }
 .img{
+    display: flex;
+    justify-content: space-around;
+}
+.texto{
+    font-size: 30px;
+    width: 300px;
     text-align: center;
-}
-.texto{
-    font-size: 30px;
 
 }
 .texto{
     font-size: 30px;
-
-
-}
-.simb{
-    float: right;
 }
 .text{
     display: flex;
@@ -64,8 +62,9 @@ td, th{
     border: 2px solid beige;
     padding: 10px;
 }
-.menutab{
+.menutab, .tabelaraffa{
     background-color: #16437C;
+    color: #FFFFFF;
 }
 table{
     align-items: left;
@@ -84,3 +83,52 @@ table{
 .center a{
     color: #FFFFFF;
 }
+.divdif{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+.textodif{
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+.container, .groupbtn, .grouptext, .tituloprincipal {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.btn-refresh{
+    display: flex;
+    justify-content: center;
+    width: 35vw;
+}
+h1{
+    margin-bottom: 30px;
+}
+.rodape{
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    list-style: none;
+    background-color: gray;
+    color: #FFFFFF;
+    font-size: 1em;
+    padding: 30px 50px;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    
+}
+footer{
+    display: flex;
+    margin-bottom: 30px;
+}
+.rodape img{
+    width: 40;
+    height: 60;
+}
+
+
+
+

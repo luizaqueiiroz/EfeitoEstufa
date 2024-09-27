@@ -4,6 +4,7 @@
     font-family: Helvetica;
     font-size: 1.5rem;
     text-align: center;
+    text-decoration: none;
   }
 
   h2 {
@@ -55,4 +56,36 @@
 
 .center a{
    color: #FFFFFF;
+}
+.img{
+  display: flex;
+  justify-content: space-around;
+}
+.titulodados{
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+}
+.links{
+  width: 35vw;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  font-size: 20px;
+  font-family: 'Trebuchet MS';
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+.menu{
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
+  list-style: none;
+  background-color: #16437C;
+  color: #FFFFFF;
+  font-size: 2em;
+  padding: 10px 30px;
+  text-shadow: 0.1em 0.1em 0.2em black
 }
